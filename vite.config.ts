@@ -10,6 +10,9 @@ export default defineConfig({
       name: 'index',
       fileName: 'index',
       formats: ['es']
+    },
+    rollupOptions: {
+      external: ['vue']
     }
   },
   plugins: [dts()]
